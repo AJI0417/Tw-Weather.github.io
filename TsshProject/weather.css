@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url("./img/bg.jpg") no-repeat center center/cover;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.search input {
+    width: 300px;
+    line-height:2;
+    border: 1px solid #fff;
+    border-radius:15px;
+    background-color: transparent;
+    color: #fff;
+    font-size:18px;
+}
+.search input:focus{
+    outline: none;
+}
+.search input::placeholder {
+    text-align: center;
+    color: #fff;
+}
+.search .fa-magnifying-glass {
+    margin-left: -25px;
+    cursor: pointer;
+}
+.result{
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    color: #fff;
+    width:500px;
+    height: 500px;
+    border: 8px solid #fff;
+    border-radius: 18px;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    position: relative;
+}
+
+.time{
+    position: absolute;
+    bottom: 5%;
+    right:5%;
+}
+#tittle{
+    font-size:2rem;
+    color: #fff;
+}
+#locationName{
+    font-size:3.5rem;
+}
+#MaxT{
+    font-size:7rem;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.item h2+h2{
+    margin-left: 20px;
+}
+
+@media  screen and (max-width:600px) {
+    .result{
+        margin-top: 30px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        color: #fff;
+        width:300px;
+        height: 300px;
+        border: 8px solid #fff;
+        border-radius: 18px;
+        background-color: rgba(0,0,0,0.6);
+        backdrop-filter: blur(3px);
+        position: relative;
+    }
+    
+    .time{
+        position: absolute;
+        bottom: 5%;
+        right:5%;
+    }
+    #tittle{
+        font-size:1.2rem;
+        text-align: center;
+    }
+    #locationName{
+        font-size:2rem;
+    }
+    #MaxT{
+        font-size:5rem;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .item h2+h2{
+        margin-left: 20px;
+    }
+}
+

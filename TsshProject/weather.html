@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="weather.css">
+    <title>台灣好天氣-程式設計專題</title>
+</head>
+
+<body onload="searchOnclick()">
+    <h2 id="tittle">台灣好天氣-程式設計專題</h2>
+    <div class="search">
+        <input type="text" id="searchValue" placeholder="例如:臺北市" maxlength="10" value="臺北市"
+            onkeydown="if(event.keyCode == 13){searchOnclick()}">
+        <i class="fa-solid fa-magnifying-glass" onclick="searchOnclick()"></i>
+    </div>
+    <div class="container">
+        <div class="result">
+            <h1 span id="locationName"></h1>
+            <h1 id="MaxT"></h1>
+            <div class="item">
+                <h2 id="Wx"></h2>
+                <h2>濕度:<span id="PoP"></span></h2>
+            </div>
+            <h3 class="time">觀測時間:<span id="time"></span></h3>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
