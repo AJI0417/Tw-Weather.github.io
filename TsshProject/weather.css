@@ -141,9 +141,12 @@ body{
     }
     
     .item h2+h2{
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
+    .item h2{
+        font-size:1.4rem;
+    }
     .ui-widget{
         font-size:1.2rem;
     }
