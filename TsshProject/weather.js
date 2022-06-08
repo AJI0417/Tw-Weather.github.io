@@ -11,7 +11,7 @@ function searchOnclick() {
     MaxT = document.getElementById("MaxT"),
     time = document.getElementById("time");
   const location = [
-    "基隆市",
+    "基隆縣",
     "臺北縣",
     "新北縣",
     "桃園縣",
@@ -53,7 +53,7 @@ function searchOnclick() {
 
 $(function () {
   let city = [
-    "基隆縣",
+    "基隆市",
     "臺北市",
     "台北市",
     "新北市",
