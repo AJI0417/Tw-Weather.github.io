@@ -15,7 +15,7 @@
 <body onload="searchOnclick()">
     <h2 id="tittle">台灣好天氣-程式設計專題</h2>
     <div class="search">
-        <input type="text" id="searchValue" placeholder="例如:臺北市" maxlength="10" value="臺北市"
+        <input type="text" id="searchValue" placeholder="例如:臺北市" maxlength="3" value="臺北市"
             onkeydown="if(event.keyCode == 13){searchOnclick()}">
         <i class="fa-solid fa-magnifying-glass" onclick="searchOnclick()"></i>
     </div>
@@ -27,7 +27,7 @@
                 <h2 id="Wx"></h2>
                 <h2>濕度:<span id="PoP"></span></h2>
             </div>
-            <h3 class="time">觀測時間:<span id="time"></span></h3>
+            <h3 class="time"><span id="time"></span></h3>
         </div>
     </div>
     <script src="weather.js"></script>

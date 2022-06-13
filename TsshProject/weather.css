@@ -60,10 +60,12 @@ body{
 }
 
 .time{
+    text-align: center;
     position: absolute;
     bottom: 5%;
     right:5%;
 }
+
 #tittle{
     font-size:2rem;
     color: #fff;
